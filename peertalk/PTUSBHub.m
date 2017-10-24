@@ -509,7 +509,7 @@ static NSString *kPlistPacketTypeConnect = @"Connect";
     
     // Read rest of the incoming usbmux_packet_t
     off_t offset = sizeof(ref_upacket.size);
-    dispatch_io_read(channel_, offset, (size_t)upacket->size - offset, queue_, ^(bool done, dispatch_data_t data, int error) {
+    dispatch_io_read(channel_, offset, (size_t)(upacket->size - offset), queue_, ^(bool done, dispatch_data_t data, int error) {
       //NSLog(@"dispatch_io_read X,Y: done=%d data=%p error=%d", done, data, error);
       
       if (!done) {
