@@ -1,12 +1,12 @@
 Pod::Spec.new do |spec|
     spec.name     = 'PeerTalk'
-    spec.version  = '0.0.2'
+    spec.version  = '0.0.3'
     spec.license  = { :type => 'MIT' }
     spec.homepage = 'http://rsms.me/peertalk/'
     spec.authors  = { 'Rasmus Andersson' => 'rasmus@notion.se' }
     spec.summary  = 'iOS and OS X Cocoa library for communicating over USB and TCP.'
 
-    spec.source   = { :git => "https://github.com/MushroomCloud/peertalk", :tag => '0.0.2' }
+    spec.source   = { :git => "https://github.com/MushroomCloud/peertalk", :tag => "#{spec.version}" }
     spec.source_files = 'peertalk/*.{h,m}'
     spec.requires_arc = true
     spec.ios.deployment_target = '8.0'
