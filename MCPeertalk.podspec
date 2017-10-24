@@ -5,6 +5,7 @@ Pod::Spec.new do |spec|
     spec.homepage = 'http://rsms.me/peertalk/'
     spec.authors  = { 'Rasmus Andersson' => 'rasmus@notion.se' }
     spec.summary  = 'iOS and OS X Cocoa library for communicating over USB and TCP.'
+    spec.module_name = "Peertalk"
 
     spec.source   = { :git => "https://github.com/MushroomCloud/peertalk.git", :tag => "#{spec.version}" }
     spec.source_files = 'peertalk/*.{h,m}'
